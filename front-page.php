@@ -327,8 +327,8 @@
               <div class="col-lg-4 col-md-6 shuffle-item"
               data-groups="[&quot;om&quot;]">
               <div class="project-img-container">
-                <a class="gallery-popup" href="images/projects/om-1-zoom.jpg" aria-label="project-img">
-                  <img class="img-fluid" src="images/projects/om-1.jpg" alt="project-img">
+                <a class="gallery-popup" href="<?php echo get_theme_file_uri( '/images/projects/om-1-zoom.jpg' ); ?>" aria-label="project-img">
+                  <img class="img-fluid" src="<?php echo get_theme_file_uri( '/images/projects/om-1.jpg' ); ?>" alt="project-img">
                   <span class="gallery-icon"><i class="fa fa-plus"></i></span>
                 </a>
                 <div class="project-item-info">
@@ -345,8 +345,8 @@
               <div class="col-lg-4 col-md-6 shuffle-item"
               data-groups="[&quot;investment&quot;]">
               <div class="project-img-container">
-                <a class="gallery-popup" href="images/projects/inv-1-zoom.png" aria-label="project-img">
-                  <img class="img-fluid" src="images/projects/inv-1.png" alt="project-img">
+                <a class="gallery-popup" href="<?php echo get_theme_file_uri( '/images/projects/inv-1-zoom.png' ); ?>" aria-label="project-img">
+                  <img class="img-fluid" src="<?php echo get_theme_file_uri( '/images/projects/inv-1.png' ); ?>" alt="project-img">
                   <span class="gallery-icon"><i class="fa fa-plus"></i></span>
                 </a>
                 <div class="project-item-info">
@@ -363,8 +363,8 @@
               <div class="col-lg-4 col-md-6 shuffle-item"
               data-groups="[&quot;construction&quot;]">
               <div class="project-img-container">
-                <a class="gallery-popup" href="images/projects/con-1-zoom.jpg" aria-label="project-img">
-                  <img class="img-fluid" src="images/projects/con-1.jpg" alt="project-img">
+                <a class="gallery-popup" href="<?php echo get_theme_file_uri( '/images/projects/con-1-zoom.jpg' ); ?>" aria-label="project-img">
+                  <img class="img-fluid" src="<?php echo get_theme_file_uri( '/images/projects/con-1.jpg' ); ?>" alt="project-img">
                   <span class="gallery-icon"><i class="fa fa-plus"></i></span>
                 </a>
                 <div class="project-item-info">
@@ -381,8 +381,8 @@
               <div class="col-lg-4 col-md-6 shuffle-item"
               data-groups="[&quot;om&quot;]">
               <div class="project-img-container">
-                <a class="gallery-popup" href="images/projects/om-2-zoom.jpg" aria-label="project-img">
-                  <img class="img-fluid" src="images/projects/om-2.jpg" alt="project-img">
+                <a class="gallery-popup" href="<?php echo get_theme_file_uri( '/images/projects/om-2-zoom.jpg' ); ?>" aria-label="project-img">
+                  <img class="img-fluid" src="<?php echo get_theme_file_uri( '/images/projects/om-2.jpg' ); ?>" alt="project-img">
                   <span class="gallery-icon"><i class="fa fa-plus"></i></span>
                 </a>
                 <div class="project-item-info">
@@ -399,8 +399,8 @@
               <div class="col-lg-4 col-md-6 shuffle-item"
               data-groups="[&quot;investment&quot;]">
               <div class="project-img-container">
-                <a class="gallery-popup" href="images/projects/inv-2-zoom.jpg" aria-label="project-img">
-                  <img class="img-fluid" src="images/projects/inv-2.jpg" alt="project-img">
+                <a class="gallery-popup" href="<?php echo get_theme_file_uri( '/images/projects/inv-2-zoom.jpg' ); ?>" aria-label="project-img">
+                  <img class="img-fluid" src="<?php echo get_theme_file_uri( '/images/projects/inv-2.jpg' ); ?>" alt="project-img">
                   <span class="gallery-icon"><i class="fa fa-plus"></i></span>
                 </a>
                 <div class="project-item-info">
@@ -417,8 +417,8 @@
               <div class="col-lg-4 col-md-6 shuffle-item"
               data-groups="[&quot;construction&quot;]">
               <div class="project-img-container">
-                <a class="gallery-popup" href="images/projects/con-2-zoom.jpg" aria-label="project-img">
-                  <img class="img-fluid" src="images/projects/con-2.jpg" alt="project-img">
+                <a class="gallery-popup" href="<?php echo get_theme_file_uri( '/images/projects/con-2-zoom.jpg' ); ?>" aria-label="project-img">
+                  <img class="img-fluid" src="<?php echo get_theme_file_uri( '/images/projects/con-2.jpg' ); ?>" alt="project-img">
                   <span class="gallery-icon"><i class="fa fa-plus"></i></span>
                 </a>
                 <div class="project-item-info">
@@ -435,8 +435,8 @@
               <div class="col-lg-4 col-md-6 shuffle-item"
               data-groups="[&quot;om&quot;]">
               <div class="project-img-container">
-                <a class="gallery-popup" href="images/projects/om-3-zoom.jpg" aria-label="project-img">
-                  <img class="img-fluid" src="images/projects/om-3.jpg" alt="project-img">
+                <a class="gallery-popup" href="<?php echo get_theme_file_uri( '/images/projects/om-3-zoom.jpg' ); ?>" aria-label="project-img">
+                  <img class="img-fluid" src="<?php echo get_theme_file_uri( '/images/projects/om-3.jpg' ); ?>" alt="project-img">
                   <span class="gallery-icon"><i class="fa fa-plus"></i></span>
                 </a>
                 <div class="project-item-info">
@@ -453,8 +453,8 @@
             <div class="col-lg-4 col-md-6 shuffle-item"
               data-groups="[&quot;investment&quot;]">
               <div class="project-img-container">
-                <a class="gallery-popup" href="images/projects/inv-3-zoom.png" aria-label="project-img">
-                  <img class="img-fluid" src="images/projects/inv-3.png" alt="project-img">
+                <a class="gallery-popup" href="<?php echo get_theme_file_uri( '/images/projects/inv-3-zoom.png' ); ?>" aria-label="project-img">
+                  <img class="img-fluid" src="<?php echo get_theme_file_uri( '/images/projects/inv-3.png' ); ?>" alt="project-img">
                   <span class="gallery-icon"><i class="fa fa-plus"></i></span>
                 </a>
                 <div class="project-item-info">
@@ -471,8 +471,8 @@
             <div class="col-lg-4 col-md-6 shuffle-item"
             data-groups="[&quot;construction&quot;]">
             <div class="project-img-container">
-              <a class="gallery-popup" href="images/projects/con-3-zoom.jpg" aria-label="project-img">
-                <img class="img-fluid" src="images/projects/con-3.jpg" alt="project-img">
+              <a class="gallery-popup" href="<?php echo get_theme_file_uri( '/images/projects/con-3-zoom.jpg' ); ?>" aria-label="project-img">
+                <img class="img-fluid" src="<?php echo get_theme_file_uri( '/images/projects/con-3.jpg' ); ?>" alt="project-img">
                 <span class="gallery-icon"><i class="fa fa-plus"></i></span>
               </a>
               <div class="project-item-info">
@@ -489,8 +489,8 @@
           <div class="col-lg-4 col-md-6 shuffle-item"
           data-groups="[&quot;epc&quot;]">
           <div class="project-img-container">
-            <a class="gallery-popup" href="images/projects/epc-1-zoom.jpg" aria-label="project-img">
-              <img class="img-fluid" src="images/projects/epc-1.jpg" alt="project-img">
+            <a class="gallery-popup" href="<?php echo get_theme_file_uri( '/images/projects/epc-1-zoom.jpg' ); ?>" aria-label="project-img">
+              <img class="img-fluid" src="<?php echo get_theme_file_uri( '/images/projects/epc-1.jpg' ); ?>" alt="project-img">
               <span class="gallery-icon"><i class="fa fa-plus"></i></span>
             </a>
             <div class="project-item-info">
@@ -507,8 +507,8 @@
         <div class="col-lg-4 col-md-6 shuffle-item"
         data-groups="[&quot;epc&quot;]">
         <div class="project-img-container">
-          <a class="gallery-popup" href="images/projects/epc-2-zoom.jpg" aria-label="project-img">
-            <img class="img-fluid" src="images/projects/epc-2.jpg" alt="project-img">
+          <a class="gallery-popup" href="<?php echo get_theme_file_uri( '/images/projects/epc-2-zoom.jpg' ); ?>" aria-label="project-img">
+            <img class="img-fluid" src="<?php echo get_theme_file_uri( '/images/projects/epc-2.jpg' ); ?>" alt="project-img">
             <span class="gallery-icon"><i class="fa fa-plus"></i></span>
           </a>
           <div class="project-item-info">
@@ -525,8 +525,8 @@
       <div class="col-lg-4 col-md-6 shuffle-item"
       data-groups="[&quot;epc&quot;]">
       <div class="project-img-container">
-        <a class="gallery-popup" href="images/projects/epc-3-zoom.png" aria-label="project-img">
-          <img class="img-fluid" src="images/projects/epc-3.png" alt="project-img">
+        <a class="gallery-popup" href="<?php echo get_theme_file_uri( '/images/projects/epc-3-zoom.png' ); ?>" aria-label="project-img">
+          <img class="img-fluid" src="<?php echo get_theme_file_uri( '/images/projects/epc-3.png' ); ?>" alt="project-img">
           <span class="gallery-icon"><i class="fa fa-plus"></i></span>
         </a>
         <div class="project-item-info">
