@@ -566,7 +566,7 @@
             <div class="row all-clients">
               <div class="col-sm-2 col-12">
                 <figure class="clients-logo products-logo">
-                  <a href="https://cee.co.id" title="Catur Elang Energi"><img loading="lazy" class="img-fluid" src="images/catur-elang-energi.png"
+                  <a href="https://cee.co.id" target="_blank" title="Catur Elang Energi"><img loading="lazy" class="img-fluid" src="<?php echo get_theme_file_uri( '/images/catur-elang-energi.png' ); ?>"
                       alt="clients-logo" /></a>
                 </figure>
               </div><!-- Other Service 1 Image -->
@@ -577,7 +577,7 @@
 
               <div class="col-sm-2 col-12">
                 <figure class="clients-logo  products-logo">
-                  <a href="https://cfishery.com" title="C-Fishery"><img loading="lazy" class="img-fluid" src="images/c-fishery.png"
+                  <a href="https://cfishery.com" target="_blank" title="C-Fishery"><img loading="lazy" class="img-fluid" src="<?php echo get_theme_file_uri( 'images/c-fishery.png' ); ?>"
                       alt="clients-logo" /></a>
                 </figure>
               </div><!-- Other Service 2 Image -->
