@@ -593,25 +593,25 @@
               <div id="testimonial-slide" class="testimonial-slide">
                 <div class="item">
                   <div class="quote-item">
-                    <img src="images/clients/cep-clients-1.webp" alt="">
+                    <img src="<?php echo get_theme_file_uri( '/images/clients/clients-1.webp' ); ?>" alt="">
                   </div><!-- Quote item end -->
                 </div>
   
                 <div class="item">
                   <div class="quote-item">
-                    <img src="images/clients/cep-clients-2.webp" alt="">
+                    <img src="<?php echo get_theme_file_uri( '/images/clients/clients-2.webp' ); ?>" alt="">
                   </div><!-- Quote item end -->
                 </div>
   
                 <div class="item">
                   <div class="quote-item">
-                    <img src="images/clients/cep-clients-3.webp" alt="">
+                    <img src="<?php echo get_theme_file_uri( '/images/clients/clients-3.webp' ); ?>" alt="">
                   </div><!-- Quote item end -->
                 </div>
   
                 <div class="item">
                   <div class="quote-item">
-                    <img src="images/clients/cep-clients-4.webp" alt="">
+                    <img src="<?php echo get_theme_file_uri( 'images/clients/clients-4.webp' ); ?>" alt="">
                   </div><!-- Quote item end -->
                 </div>
                 <!--/ Item 1 end -->
