@@ -1,6 +1,6 @@
 <?php get_header(); ?>
     <div class="banner-carousel banner-carousel-1 mb-0">
-      <div class="banner-carousel-item" style="background-image:url(images/slider-main/home-3.webp)">
+      <div class="banner-carousel-item" style="background-image:url(<?php echo get_theme_file_uri( '/images/slider/slide-1.webp' ); ?>">
         <div class="slider-content">
           <div class="container h-100">
             <div class="row align-items-center h-100">
@@ -13,7 +13,7 @@
         </div>
       </div>
 
-      <div class="banner-carousel-item" style="background-image:url(images/slider-main/home-2.png)">
+      <div class="banner-carousel-item" style="background-image:url(<?php echo get_theme_file_uri( '/images/slider/slide-2.webp' ); ?>)">
         <div class="slider-content text-center">
           <div class="container h-100">
             <div class="row align-items-center h-100">
@@ -29,7 +29,7 @@
         </div>
       </div>
 
-      <div class="banner-carousel-item" style="background-image:url(images/slider-main/temporary-bg.jpg)">
+      <div class="banner-carousel-item" style="background-image:url(<?php echo get_theme_file_uri( '/images/slider/slide-3.webp' ); ?>)">
         <div class="slider-content text-center">
           <div class="container h-100">
             <div class="row align-items-center h-100">
