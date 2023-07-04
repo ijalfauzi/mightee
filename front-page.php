@@ -58,7 +58,7 @@
             </div><!-- Col end -->
             <div class="col-md-4 text-center text-md-right mt-3 mt-md-0">
               <div class="call-to-action-btn">
-                <a class="btn btn-dark" href="ongoing-projects.html">Our Projects</a>
+                <a class="btn btn-dark" href="<?php echo site_url( 'projects' ); ?>">Our Projects</a>
               </div>
             </div><!-- col end -->
           </div><!-- row end -->
@@ -182,7 +182,7 @@
           <div class="row">
             <div class="col-md-3 col-sm-6 ts-facts">
               <div class="ts-facts-img">
-                <img loading="lazy" src="images/icon-image/fact1.png" alt="facts-img">
+                <img loading="lazy" src="<?php echo get_theme_file_uri( '/images/icons/fact1.png' ); ?>" alt="facts-img">
               </div>
               <div class="ts-facts-content">
                 <h2 class="ts-facts-num"><span class="counterUp" data-count="182">0</span></h2>
@@ -192,7 +192,7 @@
 
             <div class="col-md-3 col-sm-6 ts-facts mt-5 mt-sm-0">
               <div class="ts-facts-img">
-                <img loading="lazy" src="images/icon-image/fact2.png" alt="facts-img">
+                <img loading="lazy" src="<?php echo get_theme_file_uri( '/images/icons/fact2.png' ); ?>" alt="facts-img">
               </div>
               <div class="ts-facts-content">
                 <h2 class="ts-facts-num"><span class="counterUp" data-count="6972">0</span></h2>
@@ -202,7 +202,7 @@
 
             <div class="col-md-3 col-sm-6 ts-facts mt-5 mt-md-0">
               <div class="ts-facts-img">
-                <img loading="lazy" src="images/icon-image/fact3.png" alt="facts-img">
+                <img loading="lazy" src="<?php echo get_theme_file_uri( '/images/icons/fact3.png' ); ?>" alt="facts-img">
               </div>
               <div class="ts-facts-content">
                 <h2 class="ts-facts-num"><span class="counterUp" data-count="14">0</span> Million</h2>
@@ -212,7 +212,7 @@
 
             <div class="col-md-3 col-sm-6 ts-facts mt-5 mt-md-0">
               <div class="ts-facts-img">
-                <img loading="lazy" src="images/icon-image/fact4.png" alt="facts-img">
+                <img loading="lazy" src="<?php echo get_theme_file_uri( '/images/icons/fact4.png' ); ?>" alt="facts-img">
               </div>
               <div class="ts-facts-content">
                 <h2 class="ts-facts-num"><span class="counterUp" data-count="40">0</span></h2>
@@ -241,7 +241,7 @@
           <div class="col-lg-6">
             <div class="ts-service-box d-flex">
               <div class="ts-service-box-img">
-                <img loading="lazy" src="images/icon-image/operation-maintenance.png" alt="service-icon">
+                <img loading="lazy" src="<?php echo get_theme_file_uri( '/images/icons/operation-maintenance.png' ); ?>" alt="service-icon">
               </div>
               <div class="ts-service-box-info">
                 <h3 class="service-box-title"><a href="operation-maintenance.html">Operation & Maintenance</a></h3>
@@ -252,7 +252,7 @@
 
             <div class="ts-service-box d-flex">
               <div class="ts-service-box-img">
-                <img loading="lazy" src="images/icon-image/construction.png" alt="service-icon">
+                <img loading="lazy" src="<?php echo get_theme_file_uri( '/images/icons/construction.png' ); ?>" alt="service-icon">
               </div>
               <div class="ts-service-box-info">
                 <h3 class="service-box-title"><a href="construction.html">Construction</a></h3>
@@ -264,7 +264,7 @@
           <div class="col-lg-6 mt-5 mt-lg-0 mb-4 mb-lg-0">
             <div class="ts-service-box d-flex">
               <div class="ts-service-box-img">
-                <img loading="lazy" src="images/icon-image/epc.png" alt="service-icon">
+                <img loading="lazy" src="<?php echo get_theme_file_uri( '/images/icons/epc.png' ); ?>" alt="service-icon">
               </div>
               <div class="ts-service-box-info">
                 <h3 class="service-box-title"><a href="epc.html">EPC</a></h3>
@@ -275,7 +275,7 @@
 
             <div class="ts-service-box d-flex">
               <div class="ts-service-box-img">
-                <img loading="lazy" src="images/icon-image/investment.png" alt="service-icon">
+                <img loading="lazy" src="<?php echo get_theme_file_uri( '/images/icons/investment.png' ); ?>" alt="service-icon">
               </div>
               <div class="ts-service-box-info">
                 <h3 class="service-box-title"><a href="investment.html">Investment</a></h3>
