@@ -119,34 +119,41 @@
 
                         <div id="navbar-collapse" class="collapse navbar-collapse">
                         <ul class="nav navbar-nav mr-auto">
-                            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="<?php echo site_url(); ?>">Home</a></li>
                             <li class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">About Us <i
+                            <a href="<?php echo site_url( 'about-us' ); ?>" class="nav-link dropdown-toggle" data-toggle="dropdown">About Us <i
                                 class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu" role="menu">
-                                <li><a href="company-overview.html">Company Overview</a></li>
-                                <li><a href="team-structure.html">Team Structure</a></li>
-                                <li><a href="partnership.html">Partnership</a></li>
-                                <li><a href="csr.html">CSR</a></li>
+                                <li><a href="<?php echo site_url( 'about-us/company-overview' ); ?>">Company Overview</a></li>
+                                <li><a href="<?php echo site_url( 'about-us/team-structure' ); ?>">Team Structure</a></li>
+                                <li><a href="<?php echo site_url( 'about-us/partnership' ); ?>">Partnership</a></li>
+                                <li><a href="<?php echo site_url( 'about-us/csr' ); ?>">CSR</a></li>
                             </ul>
                             </li>
 
                             <li class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Services <i
+                            <a href="<?php echo site_url( 'services' ); ?>" class="nav-link dropdown-toggle" data-toggle="dropdown">Services <i
                                 class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu" role="menu">
-                                <li><a href="epc.html">EPC</a></li>
-                                <li><a href="construction.html">Construction</a></li>
-                                <li><a href="operation-maintenance.html">Operation & Maintenance</a></li>
-                                <li><a href="investment.html">Investment</a></li>
+                                <li><a href="<?php echo site_url( 'services/operation-maintenance' ); ?>">Operation & Maintenance</a></li>
+                                <li><a href="<?php echo site_url( 'services/construction' ); ?>">Construction</a></li>
+                                <li><a href="<?php echo site_url( 'services/epc' ); ?>">EPC</a></li>
+                                <li><a href="<?php echo site_url( 'services/investment' ); ?>">Investment</a></li>
                             </ul>
                             </li>
-                            
-                            <li class="nav-item"><a class="nav-link" href="ongoing-projects.html">Ongoing Projects</a></li>
 
-                            <li class="nav-item"><a class="nav-link" href="qhse.html">Q-HSE</a></li>
+                            <li class="nav-item dropdown">
+                            <a href="<?php echo site_url( 'projects' ); ?>" class="nav-link dropdown-toggle" data-toggle="dropdown">Projects <i
+                                class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="<?php echo site_url( 'projects/experiences' ); ?>">Experiences</a></li>
+                                <li><a href="<?php echo site_url( 'projects/ongoing-projects' ); ?>">Ongoing Projects</a></li>
+                            </ul>
+                            </li>
 
-                            <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+                            <li class="nav-item"><a class="nav-link" href="<?php echo site_url( 'qhse' ); ?>">Q-HSE</a></li>
+
+                            <li class="nav-item"><a class="nav-link" href="<?php echo site_url( 'contact-us' ); ?>">Contact Us</a></li>
                         </ul>
                         </div>
                     </nav>
