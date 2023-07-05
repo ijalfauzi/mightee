@@ -40,9 +40,7 @@
             <div class="col-md-12">
               <div class="copyright-info text-center">
                 <span>Copyright &copy;
-                  <script>
-                    document.write(new Date().getFullYear())
-                  </script>. All rights reserved.
+                  <?php echo date("Y"); ?>. All rights reserved.
                 </span>
               </div>
             </div>
