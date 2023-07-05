@@ -17,8 +17,26 @@
             </div><!-- Col end -->
 
             <div class="col-lg-4 col-md-6 footer-widget mt-5 mt-md-0">
-              <h3 class="widget-title">Certificates</h3>
-              <img src="<?php echo get_theme_file_uri( '/images/ohsas.png' ); ?>" alt="Certificates">
+              <h3 class="widget-title">Certified by</h3>
+              <div class="container">
+                <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                      <img src="<?php echo get_theme_file_uri( '/images/ISO-14001.png' ); ?>" alt="">
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-6 mb-4">
+                      <img src="<?php echo get_theme_file_uri( '/images/OHSAS-18001.png' ); ?>" alt="">
+                  </div>
+                </div>
+                <div class="row">
+
+                  <div class="col-lg-3 col-md-3 col-sm-6 mb-4">
+                      <img src="<?php echo get_theme_file_uri( '/images/TUV.png' ); ?>" alt="">
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-6">
+                      <img src="<?php echo get_theme_file_uri( '/images/SMK3.png' ); ?>" alt="">
+                  </div>
+                </div>
+              </div>
             </div><!-- Col end -->
 
             <div class="col-lg-4 col-md-6 mt-5 mt-lg-0 footer-widget">
