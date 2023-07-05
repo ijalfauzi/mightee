@@ -1953,6 +1953,7 @@ ul.navbar-nav>li.header-get-a-quote:hover>a:after {
 .shuffle-btn-group label.active {
   color: #FFF;
   background: #294295;
+  border-radius: 5px 5px 0 0;
 }
 
 .shuffle-btn-group label input {
