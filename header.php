@@ -97,7 +97,7 @@
                             </div>
                         </li>
                         <li class="header-get-a-quote">
-                            <a class="btn btn-primary" href="cep-cp-202104.pdf">Get Our Company Profile</a>
+                            <a class="btn btn-primary" href="<?php echo site_url( 'download-company-profile' ); ?>">Get Our Company Profile</a>
                         </li>
                         </ul><!-- Ul end -->
                     </div><!-- header right end -->
