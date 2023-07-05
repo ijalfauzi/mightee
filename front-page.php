@@ -244,7 +244,7 @@
                 <img loading="lazy" src="<?php echo get_theme_file_uri( '/images/icons/operation-maintenance.png' ); ?>" alt="service-icon">
               </div>
               <div class="ts-service-box-info">
-                <h3 class="service-box-title"><a href="<?php echo site_url( 'operation-maintenance' ); ?>">Operation & Maintenance</a></h3>
+                <h3 class="service-box-title"><a href="<?php echo site_url( 'services/operation-maintenance' ); ?>">Operation & Maintenance</a></h3>
                 <p>We provide maintenance and repair on the basis of inspection, analysis, periodic repair, and quick
                   repair response against incidental damage</p>
               </div>
@@ -255,7 +255,7 @@
                 <img loading="lazy" src="<?php echo get_theme_file_uri( '/images/icons/construction.png' ); ?>" alt="service-icon">
               </div>
               <div class="ts-service-box-info">
-                <h3 class="service-box-title"><a href="<?php echo site_url( 'construction' ); ?>">Construction</a></h3>
+                <h3 class="service-box-title"><a href="<?php echo site_url( 'services/construction' ); ?>">Construction</a></h3>
                 <p>We execute construction management by prioritizing quality and punctual implementation</p>
               </div>
             </div><!-- Service 2 end -->
@@ -267,7 +267,7 @@
                 <img loading="lazy" src="<?php echo get_theme_file_uri( '/images/icons/epc.png' ); ?>" alt="service-icon">
               </div>
               <div class="ts-service-box-info">
-                <h3 class="service-box-title"><a href="<?php echo site_url( 'epc' ); ?>">EPC</a></h3>
+                <h3 class="service-box-title"><a href="<?php echo site_url( 'services/epc' ); ?>">EPC</a></h3>
                 <p>Engineering, procurement and construction as an innovative design solution with effective and
                   efficient project execution.</p>
               </div>
@@ -278,7 +278,7 @@
                 <img loading="lazy" src="<?php echo get_theme_file_uri( '/images/icons/investment.png' ); ?>" alt="service-icon">
               </div>
               <div class="ts-service-box-info">
-                <h3 class="service-box-title"><a href="<?php echo site_url( 'investment' ); ?>">Investment</a></h3>
+                <h3 class="service-box-title"><a href="<?php echo site_url( 'services/investment' ); ?>">Investment</a></h3>
                 <p>Construction project business deal with BOT (Build-Own-Transfer) or BOO (Build-Own-Operate) as a
                   riskless non-investation solution.</p>
               </div>

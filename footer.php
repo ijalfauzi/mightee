@@ -42,10 +42,10 @@
             <div class="col-lg-4 col-md-6 mt-5 mt-lg-0 footer-widget">
               <h3 class="widget-title">Services</h3>
               <ul class="list-arrow">
-                <li><a href="<?php echo site_url( 'operation-maintenance' ); ?>">Operation & Maintenance</a></li>
-                <li><a href="<?php echo site_url( 'construction' ); ?>">Construction</a></li>
-                <li><a href="<?php echo site_url( 'epc' ); ?>">EPC</a></li>
-                <li><a href="<?php echo site_url( 'investment' ); ?>">Investment</a></li>
+                <li><a href="<?php echo site_url( 'services/operation-maintenance' ); ?>">Operation & Maintenance</a></li>
+                <li><a href="<?php echo site_url( 'services/construction' ); ?>">Construction</a></li>
+                <li><a href="<?php echo site_url( 'services/epc' ); ?>">EPC</a></li>
+                <li><a href="<?php echo site_url( 'services/investment' ); ?>">Investment</a></li>
               </ul>
             </div><!-- Col end -->
           </div><!-- Row end -->
