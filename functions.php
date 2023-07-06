@@ -12,6 +12,7 @@ add_action('wp_enqueue_scripts', 'mightee_files');
 // Add Document Title Tag
 
 function mightee_features() {
+    register_nav_menu('headerMenuLocation', 'Header Menu Location');
     add_theme_support('title-tag');
 }
 
