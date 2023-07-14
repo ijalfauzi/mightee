@@ -20,7 +20,7 @@
               <h3 class="widget-title">Certified by</h3>
               <div class="container">
                 <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-6">
+                <div class="col-lg-3 col-md-3 col-sm-6 mb-4">
                       <img src="<?php echo get_theme_file_uri( '/images/ISO-14001.png' ); ?>" alt="">
                   </div>
                   <div class="col-lg-3 col-md-3 col-sm-6 mb-4">
