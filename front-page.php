@@ -564,7 +564,7 @@
             <h3 class="column-title text-center">Other Products</h3>
 
             <div class="row all-clients">
-              <div class="col-sm-2 col-12">
+              <div class="col-sm-2 col-12 offset-3">
                 <figure class="clients-logo products-logo">
                   <a href="https://cee.co.id" target="_blank" title="Catur Elang Energi"><img loading="lazy" class="img-fluid" src="<?php echo get_theme_file_uri( '/images/catur-elang-energi.png' ); ?>"
                       alt="clients-logo" /></a>
@@ -574,17 +574,6 @@
               <div class="col-sm-4 col-12">
                 <p>Aims to assist the government to encourage Indonesian people to switch to renewable energy and support the world's campaign to reduce carbon emissions that can damage the earth's ozone layer.</p>
               </div><!-- Other Service 1 Paragraph -->
-
-              <div class="col-sm-2 col-12">
-                <figure class="clients-logo  products-logo">
-                  <a href="https://cfishery.com" target="_blank" title="C-Fishery"><img loading="lazy" class="img-fluid" src="<?php echo get_theme_file_uri( 'images/c-fishery.png' ); ?>"
-                      alt="clients-logo" /></a>
-                </figure>
-              </div><!-- Other Service 2 Image -->
-
-              <div class="col-sm-4 col-12">
-                <p>Supply quality seafood to the international market for manufacturers, commodity wholesalers and foodservice distributors.</p>
-              </div><!-- Other Service 2 Paragraph -->
 
             </div><!-- Clients row end -->
             <div class="col-lg-12 text-center">
