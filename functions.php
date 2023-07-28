@@ -3,8 +3,8 @@
 // Load Stylesheet and JavaScript
 
 function mightee_files() {
-    wp_enqueue_style('mightee_main_files', get_theme_file_uri('/assets/css/styles.css'));
-    wp_enqueue_script('mightee_main_js', get_theme_file_uri('/assets/js/main.js'), NULL, '1.0', true);
+    wp_enqueue_style('mightee_main_files', get_theme_file_uri('/css/style.css'));
+    wp_enqueue_script('mightee_main_js', get_theme_file_uri('/js/script.js'), NULL, '1.0', true);
 }
 
 add_action('wp_enqueue_scripts', 'mightee_files');
@@ -12,7 +12,9 @@ add_action('wp_enqueue_scripts', 'mightee_files');
 // Add Document Title Tag
 
 function mightee_features() {
+    register_nav_menu('headerMenuLocation', 'Header Menu Location');
     add_theme_support('title-tag');
+    add_theme_support( 'post-thumbnails' );
 }
 
 add_action('after_setup_theme', 'mightee_features');
@@ -73,3 +75,11 @@ function disable_wp_emojicons() {
 }
 
 add_action( 'init', 'disable_wp_emojicons' ); // hook into init and remove actions
+
+function add_additional_class_on_li($classes, $item, $args) {
+    if(isset($args->add_li_class)) {
+        $classes[] = $args->add_li_class;
+    }
+    return $classes;
+}
+add_filter('nav_menu_css_class', 'add_additional_class_on_li', 1, 3);
