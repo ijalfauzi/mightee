@@ -1,25 +1,25 @@
 <?php get_header(); ?>
     <div class="banner-carousel banner-carousel-1 mb-0">
-      <div class="banner-carousel-item" style="background-image:url(<?php echo get_theme_file_uri( '/images/slider/slide-1.webp' ); ?>">
+      <div class="banner-carousel-item" style="background-image:url(<?php echo get_theme_file_uri( '/images/slider/slider-1.jpg' ); ?>">
         <div class="slider-content">
           <div class="container h-100">
             <div class="row align-items-center h-100">
               <div class="col-md-12 text-center transparent-slide">
-                <h3 class="slide-sub-title" data-animation-in="slideInRight">Experience in the industry more than 25 years</h3>
-                <h2 class="slide-title" data-animation-in="slideInLeft">Providing the best solution for every customers through a promised quality and high added value services with all heart</h2>
+                <h3 class="slide-sub-title" data-animation-in="slideInRight">More Than 25 Years of Industry Experience</h3>
+                <h2 class="slide-title" data-animation-in="slideInLeft">Delivering the Best Quality and Valuable Solution</h2>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="banner-carousel-item" style="background-image:url(<?php echo get_theme_file_uri( '/images/slider/slide-2.webp' ); ?>)">
+      <div class="banner-carousel-item" style="background-image:url(<?php echo get_theme_file_uri( '/images/slider/slider-2.jpg' ); ?>)">
         <div class="slider-content text-center">
           <div class="container h-100">
             <div class="row align-items-center h-100">
               <div class="col-md-12 transparent-slide">
-                <h3 class="slide-sub-title" data-animation-in="slideInRight">Showcase our outstanding services</h3>
-                <h2 class="slide-title" data-animation-in="slideInLeft">Good partnership has always been a key to success in terms of providing the best service for each of our clients</h2>
+                <h3 class="slide-sub-title" data-animation-in="slideInRight">Showcasing Outstanding Services</h3>
+                <h2 class="slide-title" data-animation-in="slideInLeft">Putting Forward Good Relationships with Clients</h2>
                 <p data-animation-in="slideInRight">
                   <a href="contact.html" class="slider btn btn-primary">Make a Quote</a>
                 </p>
@@ -29,14 +29,46 @@
         </div>
       </div>
 
-      <div class="banner-carousel-item" style="background-image:url(<?php echo get_theme_file_uri( '/images/slider/slide-3.webp' ); ?>)">
+      <div class="banner-carousel-item" style="background-image:url(<?php echo get_theme_file_uri( '/images/slider/slider-3.jpg' ); ?>)">
         <div class="slider-content text-center">
           <div class="container h-100">
             <div class="row align-items-center h-100">
               <div class="col-md-12 transparent-slide">
-                <h3 class="slide-sub-title" data-animation-in="fadeIn">Technology is our friend</h3>
-                <h2 class="slide-title" data-animation-in="slideInReft">Continuously upgrade our capabilities with newer technologies
-                </h2>
+                <h3 class="slide-sub-title" data-animation-in="fadeIn">Leading-Edge Technology</h3>
+                <h2 class="slide-title" data-animation-in="slideInReft">Updated Technology to Enhance Our Capabilities</h2>
+                <div data-animation-in="slideInLeft">
+                  <a href="services.html" class="slider btn btn-primary" aria-label="contact-with-us">Our Services</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="banner-carousel-item" style="background-image:url(<?php echo get_theme_file_uri( '/images/slider/slider-4.jpg' ); ?>)">
+        <div class="slider-content text-center">
+          <div class="container h-100">
+            <div class="row align-items-center h-100">
+              <div class="col-md-12 transparent-slide">
+                <h3 class="slide-sub-title" data-animation-in="slideInRight">Safety First</h3>
+                <h2 class="slide-title" data-animation-in="slideInLeft">Committed to Ensure Quality and Safety</h2>
+                <p data-animation-in="slideInRight">
+                  <a href="contact.html" class="slider btn btn-primary">Make a Quote</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="banner-carousel-item" style="background-image:url(<?php echo get_theme_file_uri( '/images/slider/slider-5.jpg' ); ?>)">
+        <div class="slider-content text-center">
+          <div class="container h-100">
+            <div class="row align-items-center h-100">
+              <div class="col-md-12 transparent-slide">
+                <h3 class="slide-sub-title" data-animation-in="fadeIn">Precision Engineering that Fuels Industry Growth</h3>
+                <!-- <h2 class="slide-title" data-animation-in="slideInReft">Continuously upgrade our capabilities with newer technologies
+                </h2> -->
                 <div data-animation-in="slideInLeft">
                   <a href="services.html" class="slider btn btn-primary" aria-label="contact-with-us">Our Services</a>
                 </div>
