@@ -153,6 +153,8 @@
 
                                 <li class="nav-item"><a class="nav-link" href="<?php echo site_url( 'qhse' ); ?>">Q-HSE</a></li>
 
+                                <li class="nav-item"><a class="nav-link" href="<?php echo site_url( 'career' ); ?>">Career</a></li>
+                                
                                 <li class="nav-item"><a class="nav-link" href="<?php echo site_url( 'contact-us' ); ?>">Contact Us</a></li>
                             </ul>
                         </div>
