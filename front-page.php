@@ -20,9 +20,6 @@
               <div class="col-md-12 transparent-slide">
                 <h3 class="slide-sub-title" data-animation-in="slideInRight">Showcasing Outstanding Services</h3>
                 <h2 class="slide-title" data-animation-in="slideInLeft">Putting Forward Good Relationships with Clients</h2>
-                <p data-animation-in="slideInRight">
-                  <a href="contact.html" class="slider btn btn-primary">Make a Quote</a>
-                </p>
               </div>
             </div>
           </div>
@@ -36,9 +33,6 @@
               <div class="col-md-12 transparent-slide">
                 <h3 class="slide-sub-title" data-animation-in="fadeIn">Leading-Edge Technology</h3>
                 <h2 class="slide-title" data-animation-in="slideInReft">Updated Technology to Enhance Our Capabilities</h2>
-                <div data-animation-in="slideInLeft">
-                  <a href="services.html" class="slider btn btn-primary" aria-label="contact-with-us">Our Services</a>
-                </div>
               </div>
             </div>
           </div>
@@ -52,9 +46,6 @@
               <div class="col-md-12 transparent-slide">
                 <h3 class="slide-sub-title" data-animation-in="slideInRight">Safety First</h3>
                 <h2 class="slide-title" data-animation-in="slideInLeft">Committed to Ensure Quality and Safety</h2>
-                <p data-animation-in="slideInRight">
-                  <a href="contact.html" class="slider btn btn-primary">Make a Quote</a>
-                </p>
               </div>
             </div>
           </div>
@@ -67,11 +58,6 @@
             <div class="row align-items-center h-100">
               <div class="col-md-12 transparent-slide">
                 <h3 class="slide-sub-title" data-animation-in="fadeIn">Precision Engineering that Fuels Industry Growth</h3>
-                <!-- <h2 class="slide-title" data-animation-in="slideInReft">Continuously upgrade our capabilities with newer technologies
-                </h2> -->
-                <div data-animation-in="slideInLeft">
-                  <a href="services.html" class="slider btn btn-primary" aria-label="contact-with-us">Our Services</a>
-                </div>
               </div>
             </div>
           </div>
