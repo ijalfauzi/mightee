@@ -91,3 +91,20 @@ function custom_theme_menu() {
 }
 
 add_action('admin_menu', 'custom_theme_menu');
+
+// Display the theme options page
+
+function custom_theme_page() {
+    ?>
+    <div class="wrap">
+        <h1>Mightee Theme Options</h1>
+        <form method="post" action="options.php">
+            <?php
+            settings_fields('custom_theme_options');
+            do_settings_sections('custom_theme_options');
+            submit_button();
+            ?>
+        </form>
+    </div>
+    <?php
+}
