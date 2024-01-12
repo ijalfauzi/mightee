@@ -83,3 +83,11 @@ function add_additional_class_on_li($classes, $item, $args) {
     return $classes;
 }
 add_filter('nav_menu_css_class', 'add_additional_class_on_li', 1, 3);
+
+// Add theme options page to the admin menu
+
+function custom_theme_menu() {
+    add_theme_page('Theme Options', 'Theme Options', 'manage_options', 'theme-options', 'custom_theme_page');
+}
+
+add_action('admin_menu', 'custom_theme_menu');
