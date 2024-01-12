@@ -84,6 +84,7 @@ function add_additional_class_on_li($classes, $item, $args) {
 }
 add_filter('nav_menu_css_class', 'add_additional_class_on_li', 1, 3);
 
+
 // Add theme options page to the admin menu
 
 function custom_theme_menu() {
@@ -91,6 +92,7 @@ function custom_theme_menu() {
 }
 
 add_action('admin_menu', 'custom_theme_menu');
+
 
 // Display the theme options page
 
@@ -107,4 +109,38 @@ function custom_theme_page() {
         </form>
     </div>
     <?php
+}
+
+
+// Register and initialize theme options
+
+function custom_theme_settings() {
+    register_setting('custom_theme_options', 'custom_theme_settings', 'sanitize_callback');
+
+    add_settings_section('general_section', 'General Settings', 'section_callback', 'custom_theme_options');
+
+    add_settings_field('text_field', 'Text Field', 'text_field_callback', 'custom_theme_options', 'general_section');    
+}
+
+add_action( 'admin_init', 'custom_theme_settings' );
+
+
+// Sanitize callback function
+
+function sanitize_callback($input) {
+    // Sanitize and validate input as needed
+    return $input;
+}
+
+// Section callback function
+
+function section_callback() {
+    // Optional section description
+}
+
+// Text field callback function
+
+function text_field_callback() {
+    $options = get_option('custom_theme_settings');
+    echo "<input type='text' name='custom_theme_settings[text_field]' value='" . esc_attr($options['text_field']) . "' />";
 }

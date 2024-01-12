@@ -1,3 +1,12 @@
+<?php
+// Use the saved option value in your template
+$options = get_option('custom_theme_settings');
+$text_field_value = $options['text_field'];
+?>
+
+<!-- Use $text_field_value where needed in your template -->
+<h1><?php echo esc_html($text_field_value); ?></h1>
+
 <footer id="footer" class="footer">
       <div class="footer-main">
         <div class="container">
