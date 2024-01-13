@@ -9,6 +9,26 @@ function mightee_files() {
 
 add_action('wp_enqueue_scripts', 'mightee_files');
 
+// Google Fonts
+
+function enqueue_google_fonts() {
+    wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,500i,600,600i,700,700i,800|Open+Sans:400,400i,600,600i,700,700i,800', array(), null);
+}
+
+add_action('wp_enqueue_scripts', 'enqueue_google_fonts');
+
+function add_preconnect_header() {
+    echo '<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>';
+}
+
+add_action('wp_head', 'add_preconnect_header');
+
+function add_font_display_property($styles) {
+    $styles .= '<style>/* Custom styles here */</style>';
+    return str_replace('<style>', '<style>body{font-display: swap;}</style>', $styles);
+}
+add_filter('style_loader_tag', 'add_font_display_property');
+
 // Add Document Title Tag
 
 function mightee_features() {
@@ -119,7 +139,11 @@ function custom_theme_settings() {
 
     add_settings_section('general_section', 'General Settings', 'section_callback', 'custom_theme_options');
 
-    add_settings_field('text_field', 'Text Field', 'text_field_callback', 'custom_theme_options', 'general_section');    
+    add_settings_field('text_field', 'Text Field', 'text_field_callback', 'custom_theme_options', 'general_section');
+
+    // add_settings_section('slider_section', 'Sliders', 'section_callback', 'custom_theme_options');
+
+    // add_settings_field('text_field', 'Text Field', 'text_field_callback', 'custom_theme_options', 'slider_section');
 }
 
 add_action( 'admin_init', 'custom_theme_settings' );
