@@ -24,8 +24,8 @@ function add_preconnect_header() {
 add_action('wp_head', 'add_preconnect_header');
 
 function add_font_display_property($styles) {
-    $styles .= '<style>/* Custom styles here */</style>';
-    return str_replace('<style>', '<style>body{font-display: swap;}</style>', $styles);
+    $styles .= '<style></style>';
+    return str_replace('<style>', '<style></style>', $styles);
 }
 add_filter('style_loader_tag', 'add_font_display_property');
 
@@ -140,10 +140,6 @@ function custom_theme_settings() {
     add_settings_section('general_section', 'General Settings', 'section_callback', 'custom_theme_options');
 
     add_settings_field('text_field', 'Text Field', 'text_field_callback', 'custom_theme_options', 'general_section');
-
-    // add_settings_section('slider_section', 'Sliders', 'section_callback', 'custom_theme_options');
-
-    // add_settings_field('text_field', 'Text Field', 'text_field_callback', 'custom_theme_options', 'slider_section');
 }
 
 add_action( 'admin_init', 'custom_theme_settings' );
