@@ -56,7 +56,8 @@
 
                       wp_list_pages(array(
                         'title_li' => NULL,
-                        'child_of' => $findChildrenOf
+                        'child_of' => $findChildrenOf,
+                        'sort_column' => 'menu_order'
                       ));
                     ?>
                   </ul>
@@ -68,7 +69,7 @@
         </div>
 
         <div class="col-lg-8">
-            <h3 class="column-title"><?php the_title(); ?></h3>
+            <h2 class="column-title"><?php the_title(); ?></h2>
             <?php 
                 if ( have_posts() ) {
                     while ( have_posts() ) {
