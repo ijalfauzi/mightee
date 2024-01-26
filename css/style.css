@@ -3520,3 +3520,10 @@ label {
   margin-top: 30px;
   font-weight: 700;
 }
+
+/* Mightee */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
