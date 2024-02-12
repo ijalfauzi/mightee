@@ -112,53 +112,26 @@
                 <div class="row">
                     <div class="col-lg-12">
                     <nav class="navbar navbar-expand-lg navbar-dark p-0">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
-                        aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                        </button>
-                        
-                        <div id="navbar-collapse" class="collapse navbar-collapse">
-                            <ul class="nav navbar-nav mr-auto">
-                                <li class="nav-item"><a class="nav-link active" href="<?php echo site_url(); ?>">Home</a></li>
-                                <li class="nav-item dropdown">
-                                <a href="<?php echo site_url( 'about-us' ); ?>" class="nav-link dropdown-toggle" data-toggle="dropdown">About Us <i
-                                    class="fa fa-angle-down"></i></a>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li><a href="<?php echo site_url( 'about-us/company-overview' ); ?>">Company Overview</a></li>
-                                    <li><a href="<?php echo site_url( 'about-us/team-structure' ); ?>">Team Structure</a></li>
-                                    <li><a href="<?php echo site_url( 'about-us/partnership' ); ?>">Partnership</a></li>
-                                    <li><a href="<?php echo site_url( 'about-us/csr' ); ?>">CSR</a></li>
-                                </ul>
-                                </li>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
+        aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-                                <li class="nav-item dropdown">
-                                <a href="<?php echo site_url( 'services' ); ?>" class="nav-link dropdown-toggle" data-toggle="dropdown">Services <i
-                                    class="fa fa-angle-down"></i></a>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li><a href="<?php echo site_url( 'services/operation-maintenance' ); ?>">Operation & Maintenance</a></li>
-                                    <li><a href="<?php echo site_url( 'services/construction' ); ?>">Construction</a></li>
-                                    <li><a href="<?php echo site_url( 'services/epc' ); ?>">EPC</a></li>
-                                    <li><a href="<?php echo site_url( 'services/investment' ); ?>">Investment</a></li>
-                                </ul>
-                                </li>
+    <div id="navbar-collapse" class="collapse navbar-collapse">
+        <?php
+        wp_nav_menu(array(
+            'theme_location' => 'headerMenuLocation',
+            'container' => false,
+            'menu_class' => 'nav navbar-nav mr-auto',
+            'walker' => new Custom_Walker_Nav_Menu(),
+        ));
+        ?>
+    </div>
+</nav>
 
-                                <li class="nav-item dropdown">
-                                <a href="<?php echo site_url( 'projects' ); ?>" class="nav-link dropdown-toggle" data-toggle="dropdown">Projects <i
-                                    class="fa fa-angle-down"></i></a>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li><a href="<?php echo site_url( 'projects/experiences' ); ?>">Experiences</a></li>
-                                    <li><a href="<?php echo site_url( 'projects/ongoing-projects' ); ?>">Ongoing Projects</a></li>
-                                </ul>
-                                </li>
 
-                                <li class="nav-item"><a class="nav-link" href="<?php echo site_url( 'qhse' ); ?>">Q-HSE</a></li>
 
-                                <li class="nav-item"><a class="nav-link" href="<?php echo site_url( 'career' ); ?>">Career</a></li>
-                                
-                                <li class="nav-item"><a class="nav-link" href="<?php echo site_url( 'contact-us' ); ?>">Contact Us</a></li>
-                            </ul>
-                        </div>
-                    </nav>
+
                     </div>
                     <!--/ Col end -->
                 </div>

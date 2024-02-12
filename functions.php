@@ -32,7 +32,7 @@ add_filter('style_loader_tag', 'add_font_display_property');
 // Add Document Title Tag
 
 function mightee_features() {
-    register_nav_menu('headerMenuLocation', 'Header Menu Location');
+    register_nav_menu('headerMenuLocation', __('Header Menu Location'));
     add_theme_support('title-tag');
     add_theme_support( 'post-thumbnails' );
 }
@@ -164,3 +164,99 @@ function text_field_callback() {
     $options = get_option('custom_theme_settings');
     echo "<input type='text' name='custom_theme_settings[text_field]' value='" . esc_attr($options['text_field']) . "' />";
 }
+
+// Custom Walker Nav Menu
+
+// Define Custom_Walker_Nav_Menu class
+
+class Custom_Walker_Nav_Menu extends Walker_Nav_Menu {
+    function start_lvl( &$output, $depth = 0, $args = NULL ) {
+        if ($depth === 0) {
+            // Top-level dropdown menu
+            $output .= "\n<ul class=\"dropdown-menu\" role=\"menu\">\n";
+        } else {
+            // Sub-menu
+            $indent = str_repeat("\t", $depth);
+            $output .= "\n$indent<ul class=\"dropdown-menu\">\n";
+        }
+    }
+
+    function end_lvl( &$output, $depth = 0, $args = NULL ) {
+        if ($depth === 0) {
+            // Close top-level dropdown menu
+            $output .= "</ul>\n";
+        } else {
+            // Close sub-menu
+            $indent = str_repeat("\t", $depth);
+            $output .= "$indent</ul>\n";
+        }
+    }
+
+    function start_el( &$output, $item, $depth = 0, $args = NULL, $id = 0 ) {
+        $indent = ($depth) ? str_repeat("\t", $depth) : '';
+
+        $classes = empty($item->classes) ? array() : (array) $item->classes;
+
+        if (in_array('menu-item-has-children', $item->classes) && $depth === 0) {
+            $classes[] = 'nav-item dropdown';
+            $atts['class'] = 'nav-link dropdown-toggle';
+            $atts['data-toggle'] = 'dropdown';
+        } else {
+            $classes[] = 'nav-item';
+            $atts['class'] = 'nav-link';
+        }
+
+        $active_class = in_array('current-menu-item', $item->classes) ? ' active' : '';
+
+        $class_names = join(' ', apply_filters('nav_menu_css_class', array_filter($classes), $item, $args));
+        $class_names = ' class="' . esc_attr($class_names) . $active_class . '"';
+
+        $id = apply_filters('nav_menu_item_id', 'menu-item-'. $item->ID, $item, $args);
+        $id = strlen($id) ? ' id="' . esc_attr($id) . '"' : '';
+
+        $output .= $indent . '<li' . $id . $class_names .'>';
+
+        $atts = array();
+        $atts['title']  = ! empty($item->attr_title) ? $item->attr_title : '';
+        $atts['target'] = ! empty($item->target)     ? $item->target     : '';
+        $atts['rel']    = ! empty($item->xfn)        ? $item->xfn        : '';
+        $atts['href']   = ! empty($item->url)        ? $item->url        : '';
+
+        $atts = apply_filters('nav_menu_link_attributes', $atts, $item, $args);
+
+        $attributes = '';
+        foreach ($atts as $attr => $value) {
+            if (! empty($value)) {
+                $value = ('href' === $attr) ? esc_url($value) : esc_attr($value);
+                $attributes .= ' ' . $attr . '="' . $value . '"';
+            }
+        }
+
+        $item_output = $args->before;
+        $item_output .= '<a'. $attributes .'>';
+        $item_output .= $args->link_before . apply_filters('the_title', $item->title, $item->ID) . $args->link_after;
+        $item_output .= '</a>';
+        $item_output .= $args->after;
+
+        // Check if the item has children
+        if ($depth === 0 && in_array('menu-item-has-children', $item->classes)) {
+            // Add dropdown menu structure
+            $item_output .= '<ul class="dropdown-menu" role="menu">';
+        }
+
+        $output .= apply_filters('walker_nav_menu_start_el', $item_output, $item, $depth, $args);
+    }
+
+    function end_el( &$output, $item, $depth = 0, $args = NULL ) {
+        if ($depth === 0 && in_array('menu-item-has-children', $item->classes)) {
+            // Close the dropdown menu
+            $output .= '</ul>';
+        }
+    }
+}
+
+
+
+
+
+
